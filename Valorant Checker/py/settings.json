@@ -1,0 +1,9 @@
+{
+    "max_rlimits": 3,
+    "rlimit_wait": 30,
+    "cooldown": 0,
+    "new_folder": "True",
+    "print_sys": "True",
+    "capybaras": "cool",
+    "proxyscraper": "https://api.good-proxies.ru/get.php?type%5Bhttp%5D=on&access%5B'supportsHttps'%5D=on&anon%5B'elite'%5D=on&count=&ping=8000&time=600&works=100&key=933b21783c4861ea7b07f619713de54b"
+}

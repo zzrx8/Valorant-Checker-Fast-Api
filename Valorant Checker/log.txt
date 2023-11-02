@@ -1,0 +1,105 @@
+(2023-02-01 16:38:57.321065) Traceback (most recent call last):
+  File "C:\Users\roadhog\Desktop\xd\valchecker\src\codeparts\auth.py", line 109, in auth
+    'Authorization': f'Bearer {token}',
+UnboundLocalError: local variable 'token' referenced before assignment
+
+_________________________________
+(2023-02-01 16:38:58.134248) Traceback (most recent call last):
+  File "C:\Users\roadhog\Desktop\xd\valchecker\src\codeparts\auth.py", line 109, in auth
+    'Authorization': f'Bearer {token}',
+UnboundLocalError: local variable 'token' referenced before assignment
+
+_________________________________
+(2023-02-10 15:44:20.606564) Traceback (most recent call last):
+  File "C:\Users\roadhog\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connection.py", line 159, in _new_conn
+    conn = connection.create_connection(
+  File "C:\Users\roadhog\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\util\connection.py", line 84, in create_connection
+    raise err
+  File "C:\Users\roadhog\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\util\connection.py", line 74, in create_connection
+    sock.connect(sa)
+TimeoutError: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\roadhog\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 667, in urlopen
+    self._prepare_proxy(conn)
+  File "C:\Users\roadhog\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 932, in _prepare_proxy
+    conn.connect()
+  File "C:\Users\roadhog\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connection.py", line 309, in connect
+    conn = self._new_conn()
+  File "C:\Users\roadhog\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connection.py", line 164, in _new_conn
+    raise ConnectTimeoutError(
+urllib3.exceptions.ConnectTimeoutError: (<urllib3.connection.HTTPSConnection object at 0x000001E3028EDBD0>, 'Connection to 116.98.234.195 timed out. (connect timeout=None)')
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\roadhog\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\adapters.py", line 489, in send
+    resp = conn.urlopen(
+  File "C:\Users\roadhog\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\connectionpool.py", line 726, in urlopen
+    retries = retries.increment(
+  File "C:\Users\roadhog\AppData\Local\Programs\Python\Python310\lib\site-packages\urllib3\util\retry.py", line 446, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='auth.riotgames.com', port=443): Max retries exceeded with url: /userinfo (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001E3028EDBD0>, 'Connection to 116.98.234.195 timed out. (connect timeout=None)'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\roadhog\Desktop\xd\valchecker\src\checker.py", line 206, in checker
+    sys.get_region2(account, proxy)
+  File "C:\Users\roadhog\Desktop\xd\valchecker\src\codeparts\systems.py", line 59, in get_region2
+    userinfo = session.post(
+  File "C:\Users\roadhog\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\sessions.py", line 635, in post
+    return self.request("POST", url, data=data, json=json, **kwargs)
+  File "C:\Users\roadhog\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\sessions.py", line 587, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\roadhog\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\sessions.py", line 701, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\roadhog\AppData\Local\Programs\Python\Python310\lib\site-packages\requests\adapters.py", line 553, in send
+    raise ConnectTimeout(e, request=request)
+requests.exceptions.ConnectTimeout: HTTPSConnectionPool(host='auth.riotgames.com', port=443): Max retries exceeded with url: /userinfo (Caused by ConnectTimeoutError(<urllib3.connection.HTTPSConnection object at 0x000001E3028EDBD0>, 'Connection to 116.98.234.195 timed out. (connect timeout=None)'))
+
+_________________________________
+(2023-02-18 16:15:17.588186) Traceback (most recent call last):
+  File "C:\Users\roadhog\Desktop\New folder\valchecker\src\checker.py", line 309, in checker
+    ║             Inventory Price = {invprice} VP{space*(61-len(f'             Inventory Price = {invprice} VP'))}║
+UnboundLocalError: local variable 'invprice' referenced before assignment
+
+_________________________________
+(2023-02-18 16:53:30.263227) Traceback (most recent call last):
+  File "C:\Users\roadhog\Desktop\New folder\valchecker\src\codeparts\auth.py", line 109, in auth
+    'Authorization': f'Bearer {token}',
+UnboundLocalError: local variable 'token' referenced before assignment
+
+_________________________________
+(2023-02-18 17:04:36.191088) Traceback (most recent call last):
+  File "C:\Users\roadhog\Desktop\New folder\valchecker\src\checker.py", line 309, in checker
+    ║             Inventory Price = {invprice} VP{space*(61-len(f'             Inventory Price = {invprice} VP'))}║
+UnboundLocalError: local variable 'invprice' referenced before assignment
+
+_________________________________
+(2023-02-18 17:13:38.572900) Traceback (most recent call last):
+  File "C:\Users\roadhog\Desktop\New folder\valchecker\src\codeparts\auth.py", line 109, in auth
+    'Authorization': f'Bearer {token}',
+UnboundLocalError: local variable 'token' referenced before assignment
+
+_________________________________
+(2023-02-18 18:16:43.999255) Traceback (most recent call last):
+  File "C:\Users\roadhog\Desktop\New folder\valchecker\src\codeparts\auth.py", line 109, in auth
+    'Authorization': f'Bearer {token}',
+UnboundLocalError: local variable 'token' referenced before assignment
+
+_________________________________
+(2023-02-19 18:56:46.953151) Traceback (most recent call last):
+  File "C:\Users\roadhog\Desktop\valchecker\src\codeparts\auth.py", line 109, in auth
+    'Authorization': f'Bearer {token}',
+UnboundLocalError: local variable 'token' referenced before assignment
+
+_________________________________
+(2023-02-19 20:46:31.398153) Traceback (most recent call last):
+  File "C:\Users\roadhog\Desktop\valchecker\src\codeparts\auth.py", line 109, in auth
+    'Authorization': f'Bearer {token}',
+UnboundLocalError: local variable 'token' referenced before assignment
+
+_________________________________
