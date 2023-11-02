@@ -1,10 +1,10 @@
-name: Create and publish a Docker image
+name: Valorant
 
 on: push
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: ${{ github.repository }}
+  IMAGE_NAME: Valorant-Checker
 
 jobs:
   build-and-push-image:
