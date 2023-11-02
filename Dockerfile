@@ -1,2 +1,2 @@
 FROM alpine
-CMD ["echo", "Valorant Checker"]
+CMD ["echo", "Hello World! This container image is built using Github Actions!!!!"]
